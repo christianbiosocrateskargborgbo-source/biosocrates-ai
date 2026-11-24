@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BioSocrates AI</title>
+<style>
+body{background:#0b1220;color:white;font-family:Arial;text-align:center;padding:20px}
+h1{color:#00ffcc}
+input{width:90%;padding:15px;font-size:18px;border-radius:10px;border:none;margin:10px 0}
+button{padding:12px 18px;margin:5px;font-size:16px;border-radius:10px;border:none;background:#00ffcc;font-weight:bold}
+#answer{background:white;color:black;padding:20px;border-radius:12px;margin-top:20px;font-size:18px;min-height:80px;text-align:left}
+.qbtn{background:#ffcc00}
+</style>
+</head>
+<body>
+<h1>🤖 Ask BioSocrates AI</h1>
+<p>LIVE NOW - TYPE, PRESS, GET ANSWER STRAIGHT!</p>
+
+<input id="q" placeholder="Type your question here... e.g. What is BS3G?">
+<br>
+<button onclick="ask()">ASK NOW</button>
+
+<br><br>
+<button class="qbtn" onclick="show('who')">Who is Bio Socrates?</button>
+<button class="qbtn" onclick="show('bs3g')">What is BS3G?</button>
+<button class="qbtn" onclick="show('bio')">Biosocrates Token?</button>
+<button class="qbtn" onclick="show('gold')">Gold VP Token?</button>
+<button class="qbtn" onclick="show('saturn')">Saturn Token?</button>
+<button class="qbtn" onclick="show('srss')">What is SRSS?</button>
+
+<div id="answer">Type your question on top, or press any yellow button Boss. Answer go show HERE straight, no email.</div>
+
+<script>
+var data = {
+who: "WHO IS BIO SOCRATES? I am Christian Bio Socrates Kargbo. AI Developer from Sierra Leone. OSSA Class of 94. Founder of BS3G, Biosocrates Token, Gold VP Token, Saturn Token and SRSS.",
+bs3g: "WHAT IS BS3G? BS3G is my first and main token. BS3G means Bio Socrates 3rd Generation. Na the token wey start everything. For my community, my holders, my people wey believe in my vision.",
+bio: "BIOSOCRATES TOKEN: Biosocrates Token is my second token. One of my 3 main tokens. For my community, my holders.",
+gold: "GOLD VP TOKEN: Gold VP Token is my gold token. For gold, value and VIP holder
