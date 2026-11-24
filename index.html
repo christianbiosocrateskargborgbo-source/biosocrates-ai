@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="viewport" content="width=device-width, initial-scale=1"><title>BioSocrates AI - Upgraded</title>
+<style>body{background:#0a0a1a;color:white;text-align:center;font-family:Arial;padding:15px}button{background:#00ffcc;padding:14px;border:none;border-radius:10px;font-weight:bold;width:100%;margin:4px;font-size:15px}button.gold{background:gold}button.purple{background:#c084fc}input{width:95%;padding:12px;border-radius:10px;font-size:16px}#answer{background:black;padding:15px;border-radius:10px;margin-top:15px;min-height:80px;text-align:left;line-height:1.5;white-space:pre-wrap}</style>
+</head>
+<body>
+<h1>🧠 Ask BioSocrates AI</h1>
+<p>Professor Christian Bio Socrates Kargbo - Bo City To Global</p>
+<button onclick="doAsk('who is bio socrates')">Who is Bio Socrates?</button>
+<button class="gold" onclick="doAsk('what is bs3g token')">What is BS3G Token?</button>
+<button class="gold" onclick="doAsk('how to buy bs3g')">How To Buy BS3G?</button>
+<button class="purple" onclick="doAsk('saturn token')">What is Saturn Token?</button>
+<button class="purple" onclick="doAsk('saturn ring security')">Saturn Ring Security</button>
+<button onclick="doAsk('trust wallet')">Trust Wallet - How To Add?</button>
+<button onclick="doAsk('contract')">BS3G Contract Address</button>
+<button onclick="doAsk('price')">BS3G Price?</button>
+<input id="q" placeholder="Type anything...">
+<button onclick="doAsk(document.getElementById('q').value)">ASK AI</button>
+<div id="answer">Press any button Boss, I get full brain now...</div>
+<script>
+function doAsk(q){
+  if(!q) q="hello";
+  q=q.toLowerCase();
+  var a="Boss, I am BioSocrates AI. Ask me about BS3G Token, Saturn Token, Trust Wallet, or How To Buy!";
+  if(q.includes("who")||q.includes("bio socrates")) a="I am Christian Bio Socrates Kargbo. I am an AI Developer from Bo City, Sierra Leone. I build AI, Tokens and Security Systems with my phone. Professor Level!";
+  else if(q.includes("how") && q.includes("buy")) a="H
