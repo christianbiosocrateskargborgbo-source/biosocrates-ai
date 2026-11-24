@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BioSocrate AI + QLBD</title>
+<style>
+body{background:#0a0a0a;color:white;font-family:Arial;text-align:center;padding:20px}
+.box{background:#1a1a1a;padding:20px;border-radius:15px;border:2px solid #00ff88;max-width:500px;margin:auto}
+h1{color:#00ff88}
+button{background:#00ff88;color:black;padding:12px 20px;border:none;border-radius:10px;font-weight:bold;margin:5px}
+input{padding:12px;width:80%;border-radius:10px;border:none;margin:10px}
+#ans{background:#222;padding:15px;border-radius:10px;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="box">
+<h1>BioSocrate AI + QLBD</h1>
+<p><b>Quantum Ledger Blockchain Database</b></p>
+<p>Tokens LIVE. Building Now.</p>
+<input id="q" placeholder="Ask BioSocrate... e.g Who are you?">
+<br>
+<button onclick="ask()">ASK AI</button>
+<div id="ans">Boss, ask me anything...</div>
+<br>
+<button onclick="alert('QLBD = Quantum Ledger Blockchain Database. Safe, Fast, No thief!')">WHAT IS QLBD?</button>
+<button onclick="alert('Playstore na our Playground!')">PLAYSTORE</button>
+</div>
+<script>
+function ask(){
+  let q=document.getElementById('q').value.toLowerCase();
+  let a="Boss, I hear you. We go build am together with QLBD!";
+  if(q.includes('who are you')) a="I am BioSocrate AI + QLBD. Secret AI built by Boss!";
+  if(q.includes('token')) a="Tokens are LIVE and WORKING. No stress!";
+  if(q.includes('playstore')) a="Playstore na our Playground. We go showcase apps there!";
+  if(q.includes('qlbd')) a="QLBD = Quantum Ledger Blockchain Database. Safe, Fast, No thief!";
+  document.getElementById('ans').innerText=a;
+}
+</script>
+</body>
+</html>
