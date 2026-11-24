@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BioSocrates AI</title>
+<style>
+body{background:#0b1220;color:white;font-family:Arial;text-align:center;padding:20px}
+h1{color:#00ffcc}
+button{padding:15px 20px;margin:8px;font-size:18px;border-radius:10px;border:none;background:#ffcc00;font-weight:bold;width:90%}
+#answer{background:white;color:black;padding:20px;border-radius:12px;margin-top:20px;font-size:19px;min-height:80px;text-align:left}
+</style>
+</head>
+<body>
+<h1>🤖 Ask BioSocrates AI</h1>
+<p>Press any question, answer go show down straight!</p>
+
+<button onclick="show('who')">Who is Bio Socrates?</button>
+<button onclick="show('bs3g')">What is BS3G?</button>
+<button onclick="show('bio')">What is Biosocrates Token?</button>
+<button onclick="show('gold')">What is Gold VP Token?</button>
+<button onclick="show('saturn')">What is Saturn Token?</button>
+<button onclick="show('srss')">What is SRSS?</button>
+
+<div id="answer">Press any button on top. Answer go show HERE.</div>
+
+<script>
+var data = {
+who: "WHO IS BIO SOCRATES? I am Christian Bio Socrates Kargbo. AI Developer from Sierra Leone. OSSA Class of 94. Founder of BS3G, Biosocrates Token, Gold VP Token, Saturn Token and SRSS.",
+bs3g: "WHAT IS BS3G? BS3G is my first and main token. BS3G means Bio Socrates 3rd Generation. Na the token wey start everything. For my community, my holders, my people wey believe in my vision.",
+bio: "BIOSOCRATES TOKEN: Biosocrates Token is my second token. One of my 3 main tokens. For my community, my holders.",
+gold: "GOLD VP TOKEN: Gold VP Token is my gold token. For gold, value and VIP holders.",
+saturn: "SATURN TOKEN: Saturn Token is my Saturn token. Part of my token family.",
+srss: "SRSS: SRSS is my project for community and support."
+};
+function show(key){
+document.getElementById('answer').innerText = data[key];
+}
+</script>
+</body>
+</html>
