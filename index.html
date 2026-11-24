@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="viewport" content="width=device-width, initial-scale=1"><title>BioSocrates AI</title>
+<style>body{background:#0a0a1a;color:white;text-align:center;font-family:Arial;padding:20px}button{background:#00ffcc;padding:15px;border:none;border-radius:10px;font-weight:bold;width:100%;margin:5px;font-size:16px}input{width:95%;padding:12px;border-radius:10px;font-size:16px}#answer{background:black;padding:15px;border-radius:10px;margin-top:15px;min-height:60px;text-align:left}</style>
+</head>
+<body>
+<h1>🧠 Ask BioSocrates AI</h1>
+<p>Professor Christian Bio Socrates Kargbo</p>
+<button onclick="doAsk('who is bio socrates')">Who is Bio Socrates?</button>
+<button onclick="doAsk('what is bs3g')">What is BS3G?</button>
+<button onclick="doAsk('saturn ring security')">Saturn Ring Security</button>
+<input id="q" placeholder="Type here...">
+<button onclick="doAsk(document.getElementById('q').value)">ASK AI</button>
+<div id="answer">Press a button Boss, I go answer now...</div>
+<script>
+function doAsk(q){
+  if(!q) q="hello";
+  q=q.toLowerCase();
+  var a="Boss, I am BioSocrates AI. I am here. Ask me about BS3G or Bio Socrates!";
+  if(q.includes("bs3g")) a="BS3G is my token. I built it myself on my phone! Contract: 0x6db31F0b2f2bc4f8eE6c2A05B87b0cF1D5bB5d2";
+  else if(q.includes("who")||q.includes("bio")) a="I am Christian Bio Socrates Kargbo. I am an AI Developer from Bo City, Sierra Leone. Professor Level!";
+  else if(q.includes("saturn")) a="Saturn Ring Security is my security system. It protects BS3G and my people. Strong like Saturn ring!";
+  else if(q.includes("hello")||q.includes("hi")) a="Hello Boss! I dey here! I dey work now!";
+  document.getElementById('answer').innerText=a;
+  alert(a);
+}
+</script>
+</body>
+</html>
