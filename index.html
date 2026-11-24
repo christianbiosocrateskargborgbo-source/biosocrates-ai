@@ -1,40 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BioSocrate AI + QLBD</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BioSocrates AI + QLBD</title>
 <style>
-body{background:#0a0a0a;color:white;font-family:Arial;text-align:center;padding:20px}
-.box{background:#1a1a1a;padding:20px;border-radius:15px;border:2px solid #00ff88;max-width:500px;margin:auto}
-h1{color:#00ff88}
-button{background:#00ff88;color:black;padding:12px 20px;border:none;border-radius:10px;font-weight:bold;margin:5px}
-input{padding:12px;width:80%;border-radius:10px;border:none;margin:10px}
-#ans{background:#222;padding:15px;border-radius:10px;margin-top:10px}
+body{font-family:Arial;background:#0a0a1a;color:white;text-align:center;padding:20px}
+h1{color:#00ffcc;font-size:32px}
+.card{background:#1a1a3a;padding:20px;border-radius:15px;margin:15px auto;max-width:600px;text-align:left}
+button{background:#00ffcc;border:none;padding:12px 20px;border-radius:10px;font-weight:bold;cursor:pointer;margin:5px;width:100%}
+input{width:95%;padding:12px;border-radius:10px;border:none;margin:10px 0}
+#answer{background:#000;padding:15px;border-radius:10px;margin-top:15px;text-align:left;white-space:pre-wrap}
+.badge{background:#ffd700;color:black;padding:5px 10px;border-radius:20px;font-size:12px}
 </style>
 </head>
 <body>
-<div class="box">
-<h1>BioSocrate AI + QLBD</h1>
-<p><b>Quantum Ledger Blockchain Database</b></p>
-<p>Tokens LIVE. Building Now.</p>
-<input id="q" placeholder="Ask BioSocrate... e.g Who are you?">
-<br>
-<button onclick="ask()">ASK AI</button>
-<div id="ans">Boss, ask me anything...</div>
-<br>
-<button onclick="alert('QLBD = Quantum Ledger Blockchain Database. Safe, Fast, No thief!')">WHAT IS QLBD?</button>
-<button onclick="alert('Playstore na our Playground!')">PLAYSTORE</button>
+<h1>BioSocrates AI + QLBD</h1>
+<p><span class="badge">Tokens LIVE</span> <span class="badge">Building Now</span></p>
+<p>Quantum Ledger Blockchain Database</p>
+
+<div class="card">
+<h2>🧠 Ask BioSocrates AI</h2>
+<p>Type your question or press one button:</p>
+<button onclick="ask('who is bio socrates')">Who is Bio Socrates?</button>
+<button onclick="ask('what is bs3g')">What is BS3G?</button>
+<button onclick="ask('saturn tokens')">What are Saturn Tokens?</button>
+<button onclick="ask('saturn ring')">Saturn Ring Security?</button>
+<button onclick="ask('drug discovery')">AI for Drug Discovery?</button>
+<button onclick="ask('bs3g bot')">What is BS3G Bot?</button>
+<input id="q" placeholder="Ask anything... e.g. Who is Bio Socrates?">
+<button onclick="ask(document.getElementById('q').value)">ASK AI</button>
+<div id="answer">Ask me anything Boss... I get brain now!</div>
 </div>
-<script>
-function ask(){
-  let q=document.getElementById('q').value.toLowerCase();
-  let a="Boss, I hear you. We go build am together with QLBD!";
-  if(q.includes('who are you')) a="I am BioSocrate AI + QLBD. Secret AI built by Boss!";
-  if(q.includes('token')) a="Tokens are LIVE and WORKING. No stress!";
-  if(q.includes('playstore')) a="Playstore na our Playground. We go showcase apps there!";
-  if(q.includes('qlbd')) a="QLBD = Quantum Ledger Blockchain Database. Safe, Fast, No thief!";
-  document.getElementById('ans').innerText=a;
-}
-</script>
-</body>
-</html>
+
+<div class="card">
+<h3>🚀 Our Project</h3>
+<p><b>Creator:</b> Christian Bio Socrates Kargbo - AI Developer</p>
+<p><b>Tokens:</b> BS3G, BS3G Gold VP, BioSocrates Coin - All in Trust Wallet</p>
+<p><b>Security:</b> Saturn Ring Security System - L6, V5 Layer</p>
+<p><b>Work:</b> Listed o
